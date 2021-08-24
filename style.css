@@ -8,6 +8,7 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+
 body{
     overflow-x: hidden;
 }
@@ -30,7 +31,7 @@ nav{
     width: 80%;
     height: 40px;
     display: flex;
-    border: 1px solid white;
+    border: 1px solid #fff;
 }
 .inputSearch{
     position: absolute;
@@ -42,16 +43,16 @@ nav{
     border: none;
     font-size: 1rem;
     padding-left: 10px;
-    color: white;
+    color: #fff;
 }
 .inputSearch:focus{
     border: none;
     outline: none;
 }
-::placeholder{
-    color: #D4C1F9;
-    font-weight: 600;
-}
+/*::placeholder{*/
+/*    color: #D4C1F9;*/
+/*    font-weight: 600;*/
+/*}*/
 .buttonSearch{
     position: absolute;
     height: 100%;
@@ -63,7 +64,7 @@ nav{
 }
 .magnifier{
     height: 20px;
-    color: white;
+    color: #fff;
 }
 .hamburger{
     display: inline-block;
@@ -83,7 +84,7 @@ nav{
 .hamburger_inner{
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #fff;
     position: absolute;
 }
 .hamburger_inner::before,
@@ -91,7 +92,7 @@ nav{
     content: '';
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #fff;
     position: absolute;
     left: 0;
 }
@@ -111,7 +112,7 @@ nav{
     padding-top: 10px;
 }
 .backgroundHeader p{
-    color: white;
+    color: #fff;
     width: 80%;
     font-size: 1.5rem;
     letter-spacing: 3px;
@@ -124,7 +125,7 @@ nav{
     padding-top: 20px;
 }
 .backgroundText2 p{
-    color: white;
+    color: #fff;
     width: 80%;
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -203,7 +204,7 @@ nav{
 .divLogo{
     width: 30%;
     height: 70px;
-    background: white;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +251,7 @@ nav{
     line-height: 22px;
 }
 .buttonReadMore {
-    color: white;
+    color: #fff;
     font-weight: bold;
     background-color: #E48BC2;
     padding: 8px 18px;
@@ -394,10 +395,20 @@ nav{
 .elementTeam1{
     margin-top: 10%;
 }
-.bossElements{
+.bossElementLower{
     width: 80%;
     border-radius: 10%;
-    background-color: white;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin: 20px 0;
+}
+.bossElementHigher{
+    width: 80%;
+    border-radius: 10%;
+    background-color: #fff;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -427,6 +438,7 @@ nav{
 }
 .logosDiv{
     display: flex;
+    margin-bottom: 8%;
 }
 .workers{
     width: 80%;
@@ -453,6 +465,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 10%;
 }
 .roleWorker{
     font-size: 1.2rem;
@@ -472,20 +485,13 @@ nav{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     line-height: 25px;
+    width: 90%;
 }
 .workerNamePink{
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding-top: 15px;
+    color: #fff;
 }
 .workerPink{
     background-color: #dd71b4;
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10%;
 }
 .worker2Photo{
     background: #1F203A url(worker2.jpg) no-repeat center/cover;
@@ -495,21 +501,10 @@ nav{
     margin-top: 10%;
 }
 .logosPink{
-    color: white;
-    width: 23px;
-    height: 23px;
-    margin-right: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: #fff;
 }
 .workersLoremPink{
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    line-height: 25px;
+    color: #fff;
 }
 .worker3Photo{
     background: #1F203A url(worker3.jpg) no-repeat center/cover;
@@ -553,7 +548,7 @@ nav{
     border-top: 2px solid #1F203A;
     border-left: 2px solid #1F203A;
     border-right: 2px solid #1F203A;
-    outline: 1px solid white;
+    outline: 1px solid #fff;
     border-radius: 5%;
 }
 .inputs::placeholder{
@@ -570,7 +565,7 @@ nav{
     height: 100px;
 }
 .submitButton{
-    color: white;
+    color: #fff;
     font-weight: bold;
     background-color: #E48BC2;
     padding: 8px 18px;
@@ -593,7 +588,7 @@ article{
     margin-top: 15%;
     margin-bottom: 20%;
     border-radius: 10%;
-    background-color: white;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -611,11 +606,12 @@ article{
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 .footer1 p{
-    color: white;
+    color: #fff;
     font-size: 1rem;
-    width: 100vw;
+    width: 100%;
     padding: 10%;
     line-height: 1.6;
 }
@@ -630,7 +626,7 @@ article{
     padding-bottom: 5%;
 }
 .footer2 p{
-    color: white;
+    color: #fff;
     font-size: 1rem;
     width: 80%;
 }
@@ -655,7 +651,6 @@ article{
         position: absolute;
         margin-left: 55%;
     }
-
     .backgroundText{
         width: 70%;
         margin-top: 5%;
@@ -681,7 +676,6 @@ article{
         text-align: center;
         margin-top: 40px;
     }
-
     .boldText{
         width:30%;
         font-size: 2rem;
@@ -723,7 +717,6 @@ article{
         width:30%;
         padding: 0;
         margin-top: 0;
-
     }
     .elementsTeam{
         background: #f2dcf1;
@@ -765,23 +758,166 @@ article{
     }
     .teamDiv{
         display: flex;
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .date{
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin-top: 22%;
+        font-size: 2rem;
     }
     .textTeamElements{
         width: 100%;
     }
     .ourTeam{
-        margin-top: 20%;
+        margin-top: 30%;
     }
     .technologyLast{
         margin-top: 5%;
+        font-size: 1.6rem;
+        width: 60%;
     }
     .technologyBoldText{
-
+        font-size: 1.7rem;
     }
+    .element1{
+        background: #1F203A url(portret1.jpg) no-repeat center/cover;
+    }
+    .element2{
+        background: #1F203A url(portret2.jpg) no-repeat top/cover;
+    }
+    .element3 {
+        background: #1F203A url(portret3.jpg) no-repeat center/cover;
+    }
+    .recruitmentAgency{
+        display: flex;
+        flex-direction: column;
+        align-items: revert;
+        margin-top: 5%;
+        width: 50%;
+    }
+    .containerAgency{
+        display: flex;
+    }
+    .blocks{
+        display: flex;
+        padding: 20px;
+    }
+    .recruitmentText{
+        font-size: 1.2rem;
+    }
+    .numberOfText{
+        font-size: 1.7rem;
+    }
+    .boss{
+        display: flex;
+        flex-direction: revert;
+        align-items: revert;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 75vh;
+    }
+    .bossElementHigher{
+        width: 20%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-right: 2%;
+    }
+    .bossElementLower{
+        width: 20%;
+        padding: 0;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .workers{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        flex-direction: revert;
+    }
+    .worker1{
+        width: 25%;
+        border-radius: 10%;
+    }
+    .workersLorem{
+        width: 70%;
+    }
+    .worker1Photo{
+        margin-top: 8%;
+    }
+    .worker2Photo{
+        margin-top: 8%;
+    }
+    .worker3Photo{
+        margin-top: 8%;
+    }
+    .containerContact{
+        margin-top: 8%;
+        width: 100vw;
+        background:#F2DCF1;
+        flex-direction: revert;
+        justify-content: center;
+        height: 85vh;
+    }
+    article{
+        width: 23%;
+        margin-top: 20%;
+    }
+    .contact{
+        width: 30%;
+        margin-top:1%;
+        margin-right: 5%;
+    }
+    .articleText{
+        padding-top: 20%;
+        margin-top: 0;
+        margin-bottom: 20%;
+        width: 80%;
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    .containerDatePhone{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .containerDate{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+    .containerPhone{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+    .phone{
+        margin-bottom: 5px;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
+    .footer1 p{
+        font-size: 1rem;
+        width: 22%;
+        padding: 0;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+    .footer2 {
+        margin: 0;
+        padding: 0;
+    }
+    .footer2 p{
+        margin-bottom: 2%;
+        padding: 0;
+    }
+    .inputs:focus {
+    border-radius: 2%;
+    }
+
 }
