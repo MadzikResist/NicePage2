@@ -630,7 +630,58 @@ article{
     font-size: 1rem;
     width: 80%;
 }
-
+.navigation {
+    height: 100vh;
+    width: 250px;
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+    transition: transform .3s .1s ease-in-out;
+    z-index: 99;
+}
+.navigation--active {
+    transform: translateX(0px);
+}
+.navigation__list {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navigation__item {
+    margin-bottom: 20px;
+}
+.navigation__item a {
+    text-decoration: none;
+    color: #E48BC2;
+    font-size: 1.5rem;
+}
+.xButton{
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
+    margin-left: 70%;
+}
+.xIcon{
+    width: 40px;
+    height: 40px;
+    color: #E48BC2;
+}
+.container{
+    transition: opacity 0.5s;
+}
+.container--active{
+    overflow-y: hidden;
+    opacity: 0.6;
+    height: 100vh;
+    transition: opacity 0.5s;
+}
 @media (min-width: 1200px) {
     nav{
         display: flex;
@@ -650,6 +701,7 @@ article{
     .hamburger{
         position: absolute;
         margin-left: 55%;
+
     }
     .backgroundText{
         width: 70%;
@@ -918,6 +970,25 @@ article{
     }
     .inputs:focus {
     border-radius: 2%;
+    }
+
+    .navigation {
+        opacity: 0.7;
+    }
+    .navigation--active {
+        transform: translateX(0px);
+        opacity: 0.7;
+    }
+    .xIcon{
+        cursor: pointer;
+    }
+    .container{
+        transition: opacity 0.5s;
+    }
+    .container--active{
+        overflow-y: hidden;
+        opacity: 0.9;
+        transition: opacity 0.5s;
     }
 
 }
